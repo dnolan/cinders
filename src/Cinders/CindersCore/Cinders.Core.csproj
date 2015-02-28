@@ -7,8 +7,8 @@
     <ProjectGuid>{7AF38447-A83E-47A1-BBC0-E2FD5B85D6C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GameLibrary</RootNamespace>
-    <AssemblyName>GameLibrary</AssemblyName>
+    <RootNamespace>Cinders.Core</RootNamespace>
+    <AssemblyName>Cinders.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardDeck.cs" />
     <Compile Include="CardPrincess.cs" />
     <Compile Include="CardType.cs" />
     <Compile Include="CardTypeCount.cs" />

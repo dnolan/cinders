@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameLibrary
+namespace Cinders.Core
 {
     public class Player
     {
@@ -19,7 +19,12 @@ namespace GameLibrary
 
         internal void Discard()
         {
-            HeldCard.Discard();
+            HeldCard.Discard(this);
+        }
+
+        public void PlayCard(CardType card, Player player = null)
+        {
+            
         }
     }
 }

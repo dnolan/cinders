@@ -1,5 +1,5 @@
 ﻿
-namespace GameLibrary
+namespace Cinders.Core
 {
     public class CardPrincess : ICard
     {

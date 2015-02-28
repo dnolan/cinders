@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameLibrary
+namespace Cinders.Core
 {
-    class PrinceCard : IAttackCard, ICard
+    public class PrinceCard : IAttackCard, ICard
     {
         public void Discard(Player player)
         {
-            throw new NotImplementedException();
+
         }
 
-        public bool AttackPlayer(Player player)
+        public void AttackPlayer(Player player)
         {
             if (player.AllowsAttack)
             {

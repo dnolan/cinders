@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameLibrary
+namespace Cinders.Core
 {
     interface IAttackCard
     {
-        bool AttackPlayer(Player player);
+        void AttackPlayer(Player player);
     }
 }
