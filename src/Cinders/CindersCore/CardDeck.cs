@@ -29,7 +29,7 @@ namespace Cinders.Core
             };
         }
 
-        public void BuildDeck()
+        public void BuildDeck(bool shuffle = true)
         {
             var cards = new CardType[TotalCards];
             var i = 0;
@@ -43,7 +43,14 @@ namespace Cinders.Core
                 }
             }
 
-            Cards = Shuffle(cards);
+            if (shuffle)
+            {
+                Cards = Shuffle(cards);
+            }
+            else
+            {
+                Cards = cards;
+            }
         }
 
         public CardType[] Shuffle(IEnumerable<CardType> cards, int? seed = null)

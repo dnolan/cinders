@@ -8,12 +8,17 @@ namespace Cinders.Core
 {
     public class Player
     {
+        public Player(string name)
+        {
+            Name = name;
+            Active = true;
+        }
         public string Name { get; set; }
         public ICard HeldCard { get; set; }
         public ICard NewCard { get; set; }
         public ICard PlayedCard { get; set; }
 
-        public bool IsOut { get; set; }
+        public bool Active { get; set; }
 
         public bool AllowsAttack { get; set; }
 
@@ -22,9 +27,11 @@ namespace Cinders.Core
             HeldCard.Discard(this);
         }
 
-        public void PlayCard(CardType card, Player player = null)
+        public void PlayCard(ICard card, Player player = null)
         {
-            
+            PlayedCard = card;
         }
+
+        public byte Id { get; set; }
     }
 }

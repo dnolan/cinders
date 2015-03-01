@@ -5,7 +5,7 @@ namespace Cinders.Core
     {
         public void Discard(Player player)
         {
-            player.IsOut = true;
+            player.Active = false;
         }
 
 
